@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ksoichiro.android.observablescrollview.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/observable_scrollview"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:id="@+id/image_logo"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bluured"/>
+
+                    <ImageView
+                        android:background="#80000000"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="150dp"
+                        app:civ_border="false"
+                        android:id="@+id/image_logo1"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/vedis"/>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/phone"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:textColorLink="@color/colorPrimary"
+                    android:autoLink="phone"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_49_0_30_448_51_72"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/email"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:textColorLink="@color/colorPrimary"
+                    android:autoLink="email"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_vedis_berlin"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:textColorLink="@color/colorPrimary"
+                    android:autoLink="map"
+                    android:paddingLeft="32dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schönhauser Allee 142 \n10437 Berlin"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/openHour"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Öffnungszeiten"
+                    />
+
+                <TextView
+                    android:id="@+id/sun"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/openHour"
+                    android:text="So.-Do. 12:00 – 24:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/sun"
+                    android:text="Fr.-Sa. 12:00 – 02:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="opened"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:id="@+id/facebook"
+                    android:background="@drawable/facebook"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/youtube"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/google_plus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>

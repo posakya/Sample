@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="221dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/voucher_image"
+            android:src="@drawable/gutschein"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/voucher_price"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6.3dp"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:background="@drawable/button1_round"
+            android:text="In den Warenkorb"
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

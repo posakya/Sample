@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "460472648146",
+    "firebase_url": "https://vedis-b8534.firebaseio.com",
+    "project_id": "vedis-b8534",
+    "storage_bucket": "vedis-b8534.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460472648146:android:7ff6aacfb24e1148",
+        "android_client_info": {
+          "package_name": "com.example.roshan.berlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460472648146-n3g5rshlb0nub2ttkbdoec206ke23vfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3VvyCMjIs0EmdhAx-fv0aeLSRzahIYbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="item_name">18sp</dimen>
+    <bool name="isTab">true</bool>
+    <dimen name="imageSize">200dp</dimen>
+    <dimen name="item_imageSize">200dp</dimen>
+    <dimen name="gallery_size">500dp</dimen>
+    <dimen name="title_size">30sp</dimen>
+    <dimen name="table_title">16sp</dimen>
+    <dimen name="desc_size">16sp</dimen>
+</resources>

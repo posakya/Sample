@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reservation" type="id">Reservierung</item>
+    <item name="gutschein" type="id">Gutschein</item>
+    <item name="moreinfo" type="id">Mehr Info</item>
+    <item name="day_ticket" type="id">Tsgeskarte Ansehen</item>
+    <item name="wifi" type="id">Connect</item>
+    <item name="drinks" type="id">Cocktails</item>
+    <item name="detail1" type="id">Description for reservation</item>
+</resources>

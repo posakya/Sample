@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Berlin</string>
+    <string name="drawer_opened">Opened</string>
+    <string name="drawer_closed">Closed</string>
+    <string name="reservation">Reservierung</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text2">Login with Facebook</string>
+    <string name="signUp">New here? &lt;u> Sign Up&lt;/u></string>
+    <string name="_49_0_30_448_51_72">+49 (0) 30 448 51 72</string>
+    <string name="info_vedis_berlin">info@vedis.berlin</string>
+    <string name="artikel">Artikel</string>
+    <string name="menge">Menge</string>
+    <string name="preis">Preis</string>
+    <string name="cart">Karren</string>
+</resources>

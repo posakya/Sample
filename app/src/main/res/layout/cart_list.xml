@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:title="@string/cart"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/relative"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/artikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/menge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="@string/preis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_below="@+id/relative"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_below="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesamtsumme: "
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_total"/>
+
+        <TextView
+            android:id="@+id/total_value"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="23$"/>
+
+        <Button
+            android:textColor="@android:color/white"
+            android:text="Confirm"
+            android:id="@+id/payment"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1_round"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
