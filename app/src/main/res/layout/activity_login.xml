@@ -13,7 +13,7 @@
         android:src="@mipmap/login"
         android:id="@+id/imsge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         />
 
     <ScrollView
@@ -34,30 +34,34 @@
                 android:padding="15dp">
 
                 <ImageView
+
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="36dp"
                     app:srcCompat="@drawable/vedis" />
 
                 <TextView
                     android:id="@+id/text_view_vedis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Sign In"
                     android:textColor="@color/colorAccent"
                     android:textSize="15sp" />
 
 
+
+
                 <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="30dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/colorAccent">
 
                     <AutoCompleteTextView
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/avatar"
                         android:textColorHint="#ffff"
                         app:backgroundTint="#ffff"
                         android:id="@+id/username"
@@ -66,11 +70,13 @@
                         android:hint="Email"
                         android:inputType="text"
                         android:maxLines="1"
-                        android:padding="10dp"
+                        android:paddingBottom="15dp"
                         android:singleLine="true"
                         android:textColor="@color/colorAccent"/>
 
                 </android.support.design.widget.TextInputLayout>
+
+
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -78,17 +84,19 @@
                     android:textColorHint="@color/colorAccent">
 
                     <EditText
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/lock"
                         android:textColorHint="#ffff"
                         app:backgroundTint="#ffff"
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password"
+                        android:hint="Passwort"
                         android:imeActionId="@+id/login"
                         android:imeOptions="actionUnspecified"
                         android:inputType="textPassword"
                         android:maxLines="1"
-                        android:padding="10dp"
+                        android:paddingBottom="15dp"
                         android:singleLine="true"
                         android:textColor="@color/colorAccent"
                          />
@@ -101,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/button_round"
+                    android:background="@drawable/button1_round"
                     android:padding="10dp"
                     android:text="Sign in"
                     android:textColor="@color/colorAccent"
@@ -122,7 +130,8 @@
             </LinearLayout>
 
             <RelativeLayout
-                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
                 android:layout_below="@+id/email_login_form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

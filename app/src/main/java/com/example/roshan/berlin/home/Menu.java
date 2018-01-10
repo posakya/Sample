@@ -58,7 +58,6 @@ public class Menu extends Fragment {
             typeArrayList.clear();
         }
 
-        typeArrayList.add(new MenuType("Tageskarte",R.drawable.chicken_vindaloo,desc));
         typeArrayList.add(new MenuType("Vorspeisen",R.drawable.chicken_vindaloo,desc));
         typeArrayList.add(new MenuType("Suppen",R.drawable.chicken_vindaloo,desc));
         typeArrayList.add(new MenuType("Beilagen",R.drawable.chicken_vindaloo,desc));

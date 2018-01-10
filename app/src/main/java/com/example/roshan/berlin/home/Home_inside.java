@@ -218,22 +218,26 @@ public class Home_inside extends Fragment {
                        final Button btn_count=toolbar1.findViewById(R.id.count);
 
                       // getActivity().invalidateOptionsMenu();
+try{
+    new Timer().schedule(new TimerTask() {
+        @Override
+        public void run() {
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    // This code will always run on the UI thread, therefore is safe to modify UI elements.
+                    Cursor cursor1=db.getGutschein();
+                    int count=cursor1.getCount();
+                    btn_count.setText(""+count);
+                }
+            });
 
-                       new Timer().schedule(new TimerTask() {
-                           @Override
-                           public void run() {
-                               getActivity().runOnUiThread(new Runnable() {
-                                   @Override
-                                   public void run() {
-                                       // This code will always run on the UI thread, therefore is safe to modify UI elements.
-                                       Cursor cursor1=db.getGutschein();
-                                       int count=cursor1.getCount();
-                                       btn_count.setText(""+count);
-                                   }
-                               });
+        }
+    },0, 1000);
+}catch (NullPointerException e){
+    e.printStackTrace();
+}
 
-                           }
-                       },0, 1000);
 
                       // toolbar1.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
                        back.setOnClickListener(new View.OnClickListener() {

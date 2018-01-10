@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:padding="10dp"
-            android:hint="Enter Date"/>
+            android:hint="Datum"/>
         <EditText
             android:textColor="@android:color/white"
             android:textColorHint="#ffff"
@@ -60,10 +60,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:padding="10dp"
-            android:hint="Enter Time"/>
+            android:hint="Zeit"/>
 
         <RelativeLayout
-           android:background="@drawable/edit_text"
+           android:background="@drawable/relative"
             android:layout_marginTop="10dp"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="13dp"
@@ -94,7 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:hint="Enter Username"/>
+        android:hint="Eingeben Nutzername"/>
 
     <EditText
         android:textColor="@android:color/white"
@@ -106,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:hint="Enter Email"/>
+        android:hint="Eingeben Email"/>
     <EditText
         android:textColor="@android:color/white"
         android:textColorHint="#ffff"
@@ -118,7 +118,7 @@
         android:layout_height="40dp"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:hint="Enter Telephone"/>
+        android:hint="Eingeben Kontakt"/>
     <EditText
         android:textColor="@android:color/white"
         android:textColorHint="#ffff"
@@ -131,7 +131,7 @@
         android:padding="10dp"
         android:singleLine="false"
         android:layout_margin="10dp"
-        android:hint="Enter Message"/>
+        android:hint="Eingeben Meldung"/>
     <Button
         android:id="@+id/btn_submit"
         android:layout_marginTop="10dp"
@@ -141,9 +141,9 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:textColor="@android:color/white"
-        android:background="@drawable/button_round"
+        android:background="@drawable/button1_round"
         android:textAllCaps="true"
-        android:text="Submit"/>
+        android:text="Anfrage absenden"/>
     </LinearLayout>
 </ScrollView>
 </RelativeLayout>

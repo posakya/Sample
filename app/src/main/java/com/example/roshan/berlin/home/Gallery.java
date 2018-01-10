@@ -51,6 +51,7 @@ public class Gallery extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
             progressDialog.setMessage("loading");
             progressDialog.setCancelable(true);
             progressDialog.show();

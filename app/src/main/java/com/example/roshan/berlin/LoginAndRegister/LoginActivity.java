@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -60,8 +61,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-import static android.Manifest.permission.READ_CONTACTS;
-import static com.example.roshan.berlin.R.id.email;
 
 /**
  * A login screen that offers login via email/password.
@@ -77,6 +76,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     String password,username;
     Button btn_sign_in;
     EditText editText_signin;
+    TextView indian;
     SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +85,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         btn_sign_in=(Button)findViewById(R.id.sign_in_button);
         editText_signin=(EditText)findViewById(R.id.username);
         tv_newhere=(TextView)findViewById(R.id.tv_vedis3);
+        indian=(TextView)findViewById(R.id.text_view_vedis);
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/robot.ttf");
+        indian.setTypeface(type);
+        indian.setText(R.string.india);
         btn_sign_in.setOnClickListener(this);
         tv_newhere.setOnClickListener(this);
         tv_newhere.setText(Html.fromHtml(getString(R.string.signUp)));

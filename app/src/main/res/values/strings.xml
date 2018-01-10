@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Berlin</string>
+    <string name="app_name">Vedis</string>
     <string name="drawer_opened">Opened</string>
     <string name="drawer_closed">Closed</string>
     <string name="reservation">Reservierung</string>
@@ -13,4 +13,7 @@
     <string name="menge">Menge</string>
     <string name="preis">Preis</string>
     <string name="cart">Karren</string>
+    <string name="google">https://plus.google.com/+VedisIndischesRestaurantBerlin</string>
+    <string name="youtube">https://vedis.berlin/kontakt#</string>
+    <string name="india"><![CDATA[Indian Restaurant - Cafe & Cocktailbar]]></string>
 </resources>

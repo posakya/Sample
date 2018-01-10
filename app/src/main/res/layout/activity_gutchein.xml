@@ -25,18 +25,17 @@
                 android:id="@+id/backArrow"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
                 android:src="@drawable/back"/>
 
             <TextView
                 android:layout_marginLeft="-10dp"
                 android:layout_toRightOf="@id/backArrow"
                 android:layout_centerVertical="true"
-                android:textAllCaps="true"
                 android:textSize="20sp"
                 android:textColor="@color/colorAccent1"
-                android:text="GUTSCHEIN"
+                android:text="Gutschein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

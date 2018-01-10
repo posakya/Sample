@@ -3,12 +3,14 @@ package com.example.roshan.berlin.home;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
@@ -22,6 +24,7 @@ import android.widget.TextView;
 import com.example.roshan.berlin.R;
 import com.example.roshan.berlin.adapter.Cursor_Adapter;
 import com.example.roshan.berlin.dbHandler.DBHandler;
+import com.example.roshan.berlin.payment.Payement;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -30,11 +33,12 @@ public class Cart extends AppCompatActivity {
     DBHandler db;
     Cursor c;
     Float total;
+    float sub_total;
     private ListView listView;
     Toolbar toolbar;
     TextView txt_total;
     EditText edit_item_name,edit_quantity_value,edit_price;
-    Button btn_update,btn_delete;
+    Button btn_update,btn_delete,btn_conrifm;
     String itemName,itemQuantity,itemPrice;
     cursor_adapter adapter;
 
@@ -44,9 +48,11 @@ public class Cart extends AppCompatActivity {
         setContentView(R.layout.cart_list);
         db=new DBHandler(getApplicationContext());
         listView=(ListView)findViewById(R.id.listView);
+        btn_conrifm = (Button)findViewById(R.id.payment);
         txt_total=(TextView)findViewById(R.id.total_value);
         toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         c=db.getGutschein();
         String[] from={db.item,db.price,db.quantity};
         int[] to={R.id.txt_artikel,R.id.txt_preis,R.id.txt_menge};
@@ -63,7 +69,7 @@ public class Cart extends AppCompatActivity {
                     public void run() {
                         // This code will always run on the UI thread, therefore is safe to modify UI elements.
                         Cursor c = db.total();
-                        float sub_total = c.getFloat(c.getColumnIndex("total_price"));
+                        sub_total = c.getFloat(c.getColumnIndex("total_price"));
                         txt_total.setText(String.format("€ %.2f", sub_total));
                     }
                 });
@@ -83,6 +89,14 @@ public class Cart extends AppCompatActivity {
             }
         });
 
+        btn_conrifm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cart.this, Payement.class);
+                intent.putExtra("total",sub_total);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -184,4 +198,12 @@ public class Cart extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -261,7 +261,9 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progressDialog.setMessage("");
+
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progressDialog.setMessage("Registering");
             progressDialog.setCancelable(false);
             progressDialog.show();
         }
@@ -287,7 +289,7 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
                     editor.apply();
                     UserProfile userProfile=new UserProfile();
                     userProfile.execute();
-                    Toast.makeText(RegisterActivity.this, "" + code, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(RegisterActivity.this, "" + code, Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                 }
                 if (code.equals("0")) {

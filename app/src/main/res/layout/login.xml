@@ -74,7 +74,7 @@
                         android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Username"
+                        android:hint="Nutzername"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -112,7 +112,7 @@
                         android:id="@+id/phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Phone Number"
+                        android:hint="Telefonnummer"
                         android:inputType="number"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -132,7 +132,7 @@
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password"
+                        android:hint="Passwort"
                         android:inputType="textPassword"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -152,7 +152,7 @@
                         android:id="@+id/confirm_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Confirm Password"
+                        android:hint="Bestätige das Passwort"
                         android:imeActionId="@+id/login"
                         android:imeOptions="actionUnspecified"
                         android:inputType="textPassword"
@@ -163,7 +163,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <Button
-                    android:background="@drawable/button_round"
+                    android:background="@drawable/button1_round"
                     android:id="@id/up"
                     style="?android:textAppearanceSmall"
                     android:layout_width="match_parent"
@@ -172,7 +172,7 @@
                     android:layout_marginTop="16dp"
                     android:padding="10dp"
                     android:textAllCaps="true"
-                    android:text="Sign Up"
+                    android:text="registrieren"
                     android:textStyle="bold" />
 
                 <TextView
@@ -183,7 +183,7 @@
                     android:paddingBottom="10dp"
                     android:textColor="@color/colorAccent1"
                     android:layout_marginTop="10dp"
-                    android:text="Already have an account?Sign In"
+                    android:text="Haben Sie bereits ein Konto? Einloggen"
                     android:textSize="15sp" />
 
             </LinearLayout>
